@@ -1,4 +1,98 @@
-body {
-    font-family: 'Roboto';
-    background-color:#FFFFFF;
+:root {
+/* Fonts */
+--main-font: "Roboto", sans-serif;
+--secondary-font: "Raleway", sans-serif;
+
+
+/* Text colors */
+--main-txt-cl: #757575;
+--main-title-cl: #212121;
+--light-txt-cl: #ffffff99;
+--accent-txt-cl: #2196F3;
+--hero-txt-cl: #ffffff;
+
+
+/* Background colors */
+--accent-bg-cl: #2196F3;
+--main-bg-cl: #2F303A;
+
+/* Other */
+
+
+}
+/* General styles */
+.page {
+    font-family: var(--main-font);
+    color: var(--main-txt-cl);
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+
+}
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+.list {
+    list-style: none;
+}
+.hidden-elements {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/* Header */
+.main-nav{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--main-title-cl);
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-txt-cl);
+}
+.current {
+    color: var(--accent-txt-cl);
+}
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--main-title-cl)
+}
+.logo-accent {
+    color: var(--accent-txt-cl);
+}
+/* Main; Hero */
+.hero {
+    background-color: var(--main-bg-cl);
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-txt-cl);
+}
+.hero-btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    cursor: pointer;
 }
