@@ -15,6 +15,8 @@
 /* Background colors */
 --accent-bg-cl: #2196F3;
 --main-bg-cl: #2F303A;
+--light-bg-cl: #F5F4FA;
+--card-bg-cl: #ffffff;
 
 /* Other */
 
@@ -78,6 +80,7 @@
 /* Main; Hero */
 .hero {
     background-color: var(--main-bg-cl);
+    color: var(--hero-txt-cl);
 }
 .hero-title {
     font-weight: 900;
@@ -86,7 +89,6 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--hero-txt-cl);
 }
 .hero-btn {
     font-family: inherit;
@@ -95,4 +97,66 @@
     line-height: calc(30 / 16);
     letter-spacing: 0.06em;
     cursor: pointer;
+    background-color: var(--accent-txt-cl);
+    color: currentColor
+}
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #188CE8;
+}
+/* Benefits */
+.benefits-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-title-cl)
+}
+
+/* Work */
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-title-cl)
+}
+
+/* Out team */
+.team {
+    background-color: var(--light-bg-cl)
+}
+.team-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.03em;
+    color: var(--main-title-cl)
+}
+.team-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+}
+.team-list-item {
+    width: 270px;
+    height: 368px;
+    background-color: var(--card-bg-cl);
+}
+/* Footer */
+.footer {
+    background-color: var(--main-bg-cl);
+}
+.logo-footer {
+    color: var(--hero-txt-cl);
+}
+.address {
+    font-style: normal;
+}
+.address-map {
+    color: var(--hero-txt-cl)
 }
