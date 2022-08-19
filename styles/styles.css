@@ -142,9 +142,11 @@
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
 }
-.team-list-item {
+.team-card {
     width: 270px;
     height: 368px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
     background-color: var(--card-bg-cl);
 }
 /* Footer */
@@ -158,5 +160,36 @@
     font-style: normal;
 }
 .address-map {
-    color: var(--hero-txt-cl)
+    color: var(--hero-txt-cl);
+}
+
+/* Portfolio page */
+.portfolio-card {
+    width: 370px;
+    height: 404px;
+    border: 1px solid #EEEEEE;
+}
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    color: var(--main-title-cl);
+}
+.portolio-nav-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-title-cl);
+    cursor: pointer;
+}
+.portolio-nav-btn:hover,
+.portolio-nav-btn:focus {
+    color: var(--hero-txt-cl);
+    background-color: var(--accent-bg-cl);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
